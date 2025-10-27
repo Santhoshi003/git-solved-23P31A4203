@@ -1,21 +1,63 @@
+# Application Configuration (Combined Production, Development, Experimental)
+
 application:
   name: DevOpsSimulator
-  version: 1.0.0
-  environment: production
-  
+  version: 3.0.0-experimental
+  environment: testing
+  experimental_mode: true
+
 server:
-  host: 0.0.0.0
-  port: 8080
-  ssl_enabled: true
-  
-logging:
-  level: INFO
-  format: json
-  
-# Development configuration (enabled via environment variable)
-development:
-  enabled: false
+  host: localhost
   port: 3000
-  hot_reload: false
-  debug_mode: false
-  mock_apis: false
+  ssl_enabled: false
+  hot_reload: true
+  multi_port: [9000, 9001, 9002]
+
+logging:
+  level: TRACE
+  format: structured
+  output: /var/log/experimental.log
+  show_stack_trace: true
+  ai_analysis: enabled
+
+database:
+  host: cluster.example.com
+  port: 5432
+  name: devops_experimental
+  distributed: true
+  fallback_host: localhost
+  fallback_name: devops_dev
+
+features:
+  auto_scaling: advanced
+  load_balancer: ai-optimized
+  backup_enabled: true
+  chaos_engineering: enabled
+  experimental_features: true
+
+development:
+  mock_external_apis: true
+  debug_mode: true
+  cors_enabled: true
+
+ai_features:
+  predictive_scaling: true
+  anomaly_detection: true
+  auto_optimization: true
+  model_version: "v2.1.0"
+
+cloud_providers:
+  - aws
+  - azure
+  - gcp
+  - digitalocean
+
+security:
+  zero_trust: enabled
+  encryption: AES-256
+  audit_logging: comprehensive
+
+notifications:
+  slack_webhook: "https://hooks.slack.com/services/XXX"
+  discord_webhook: "https://discord.com/api/webhooks/YYY"
+  email_alerts: false
