@@ -1,0 +1,23 @@
+* 92a3570 (HEAD -> main, origin/main) docs: Add changelog
+* 11c3f80 docs: Add Git mastery journey documentation
+| * c610cf8 (origin/feature/another-feature) feat: Add test feature
+|/  
+* bfed25a docs: Update README
+* 569fc81 (tag: v1.1.0, tag: v1.0.0, feature/another-feature) docs: Add FAQ section
+| * 8de8d22 (origin/feature/new-feature, feature/new-feature) feat: Add new feature
+|/  
+* f323578 Merge: main + conflict-simulator resolved with experimental features commented out
+*   310191c Phase 3 Merge: main + conflict-simulator resolved with experimental features commented out
+|\  
+| * d3dd9b2 (origin/conflict-simulator, instructor/conflict-simulator, conflict-simulator) updating conflict-simulator
+* | 3f98711 Added checkpoint 2 folder with initial files
+* | 6fc14fa Removed old checkpoint1.png
+* | 34fb9fc Added checkpoint 2 folder with initial files
+* |   1d35d4d merge: Resolve all conflicts between main and dev branches
+|\ \  
+| * | 02011a5 (origin/dev, instructor/dev, dev) updating dev
+| |/  
+* | 0312c6f (instructor/main, instructor/HEAD) updating main
+* | fadfd24 Revise README for DevOps Simulator project
+|/  
+* ae630eb Initial commit
